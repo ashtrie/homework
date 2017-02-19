@@ -1,0 +1,25 @@
+<!ELEMENT downhillBikes (company+)>
+
+<!ELEMENT company (productLine+)>
+<!ATTLIST company name CDATA #REQUIRED>
+
+<!ELEMENT productLine (bike+)>
+<!ATTLIST productLine name CDATA #REQUIRED>
+
+<!ELEMENT bike (frameset, wheels, components)>
+<!ATTLIST bike name CDATA #REQUIRED>
+
+<!ELEMENT frameset (frame, fork, rearShock)>
+<!ELEMENT frame (#PCDATA)>
+<!ELEMENT fork (#PCDATA)>
+<!ELEMENT rearShock (#PCDATA)>
+
+<!ELEMENT wheels (hub, rims, tires)>
+<!ELEMENT hub (#PCDATA)>
+<!ELEMENT rims (#PCDATA)>
+<!ELEMENT tires (#PCDATA)>
+
+<!ELEMENT components (saddle, brakes, shifters)>
+<!ELEMENT saddle (#PCDATA)>
+<!ELEMENT brakes (#PCDATA)>
+<!ELEMENT shifters (#PCDATA)>

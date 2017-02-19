@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>React и КО</h1>
+		<p>Ломтев И. Щербаков А.</p>
+	</header>
+
+	<section class="slide">
+		<img src="pictures/dayswithoutnewjsframework.png" alt="" class="cover">
+	</section>
+
+	<section class="slide" id="reactWin">
+		<div>
+			<img src="pictures/jscripting.png">
+		</div>
+		<div class="under">
+			<img src="pictures/ratings.png">
+			<img class="gif" src="pictures/butwhy.gif">
+		</div>
+		<style>
+			#reactWin .under img {
+				display: inline-block;
+			}
+			#reactWin .under .gif {
+				width: 45%;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="evolution">
+		<div>
+			<img src="pictures/homersapien.jpg">
+		</div>
+		<div>
+			<span>native js ES3</span>
+			<span>jQuery</span>
+			<span>Backbone+Marionette</span>
+			<span>Angular</span>
+			<span>React</span>
+		</div>
+		<style>
+			#evolution img {
+				width: 100%;
+			}
+			#evolution div span + span {
+				padding-left: 30px;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="cover">
+		<img src="pictures/plushki.jpeg" alt="" class="cover">
+	</section>
+	<section class="slide" id="dom">
+		<!-- <h2>Virtual DOM</h2> -->
+		<img src="pictures/virtual_dom1.jpg" alt="vdom" class="cover">
+		<style>
+			#dom h2 {
+				padding-left: 42%;
+				color: #010101;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<p><b>DOM</b> (аббревиатура от <i>Document Object Model</i>) — способ представления структурного документа с помощью объектов. Это кроссплатформенное и языко-независимое соглашение для представления и взаимодействия с данными в <i>HTML</i>, <i>XML</i> и т.д. </p>
+	</section>
+	<section class="slide" id="why">
+		<h2>Так почему бы просто не использовать DOM…?</h2>
+		<!-- <img src="pictures/virtual_dom1.jpg" alt="vdom" class="cover"> -->
+		<style>
+			#why h2 {
+				padding-top: inherit;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<h2>Потому что…</h2>
+		<img src="pictures/slowpoke.png" alt="slowpoke" class="cover">
+	</section>
+	<section class="slide" id="social">
+		<img src="pictures/tw.png" alt="tw" class="tw">
+		<img src="pictures/fb.jpg" alt="fb" class="fb next">
+		<img src="pictures/vk.png" alt="vk" class="vk next">
+		<style>
+			#social {
+				padding-top: 200px;
+			}
+			#social .tw {
+				width: 250px;
+				height: 250px;
+			}
+			#social .fb {
+				width: 300px;
+				height: 250px;
+			}
+			#social .vk {
+				width: 250px;
+				height: 250px;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<img src="pictures/trees.png" alt="trees">
+	</section>
+	<section class="slide">
+		<img src="pictures/rRouter.jpg" alt="router" class="cover">
+	</section>
+	<section class="slide" id="router-code">
+		<pre>
+			<code>ReactDOM.render((</code>
+			<code>	&lt;Router&gt;</code>
+			<code>		&lt;Route path="/" component={MainLayout}&gt;</code>
+			<code>			&lt;IndexRoute component={Home} /&gt;</code>
+			<code>			&lt;Route component={SearchLayout}&gt;</code>
+			<code>				&lt;Route path="users" component={UserList} /&gt;</code>
+			<code>				&lt;Route path="widgets" component={WidgetList} /&gt;</code>
+			<code>			&lt;/Route&gt;</code>
+			<code>		&lt;/Route&gt;</code>
+			<code>	&lt;/Router&gt;</code>
+			<code>), document.getElementById('root'));</code>
+		</pre>
+		<style>
+			#router-code pre {
+				font-size: 23px;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<img src="pictures/serverReact.jpg" alt="serverReact" class="cover">
+	</section>
+	<section class="slide">
+		<img src="pictures/serverReact2.png" alt="serverReact2" class="cover">
+	</section>
+
+	<section class="slide" id="helloWorld">
+		<h2>Hello, world!</h2>
+		<pre>
+			<code>ReactDOM.render(</code>
+	  		<code>	&lt;h1&gt;Hello, world!&lt;/h1&gt;,</code>
+	  		<code>	document.getElementById('root')</code>
+			<code>);</code>
+		</pre>
+	</section>
+
+	<section class="slide" id="jsx1">
+		<h2>JSX</h2>
+		<pre>
+			<code>const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code>
+			<code>const element = &lt;span&gt;2 + 2 = { 2 + 2 }&lt;/span&gt;;</code>
+			<code>const element = (</code>
+			<code>	&lt;a href={ baseUrl } className="link"&gt;</code>
+			<code>		&lt;img src={ user.avatarUrl } alt={ user.name }/&gt;</code>
+			<code>	&lt;/a&gt;</code>
+			<code>);</code>
+		</pre>
+	</section>
+
+	<section class="slide" id="jsx2">
+		<h2>JSX</h2>
+		<pre>
+			<code>function getGreeting(user) {</code>
+  			<code>	if (user) {</code>
+    		<code>		return &lt;span&gt;Hello, { formatName(user) }!&lt;/span&gt;;</code>
+  			<code>	}</code>
+  			<code>	return &lt;span&gt;Hello, Stranger.&lt;/span&gt;;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide" id="components1">
+		<h2>Components</h2>
+		<pre>
+			<code>function Welcome(props) {</code>
+  			<code>	return &lt;span&gt;wassup?&lt;/span&gt;;</code>
+			<code>}</code>
+			<code>class Welcome extends React.Component {</code>
+  			<code>	render() {</code>
+    		<code>		return &lt;span&gt;wassup?&lt;/span&gt;;</code>
+  			<code>	}</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide" id="components2">
+		<h2>Components</h2>
+		<pre>
+			<code>function Welcome(props) {</code>
+  			<code>	return &lt;h1&gt;Hello, { props.name }&lt;/h1&gt;;</code>
+			<code>}</code>
+			<code>function App() {</code>
+  			<code>	return (</code>
+    		<code>		&lt;div&gt;</code>
+      		<code>			&lt;Welcome name="andrjusha" /&gt;</code>
+      		<code>		&lt;/div&gt;</code>
+  			<code>	);</code>
+			<code>}</code>
+		</pre>
+		<style>
+			#components2 pre {
+				font-size: 80%;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="components3">
+		<h2>Components</h2>
+		<pre>
+			<code>let players = ['pudge', 'axe', 'antimage', 'yomama'];</code>
+			<code>function team(props) {</code>
+			<code>	let players = props.map((item, i) => {</code>
+			<code>		return &lt;li key={ i }&gt;{ item }&lt;/li&gt;);</code>
+			<code>	}</code>
+			<code>	return &lt;ul&gt;{ players }&lt;/ul&gt;;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide" id="state1">
+		<h2>State</h2>
+		<pre>
+			<code>class Clock extends React.Component {</code>
+			<code>	constructor(props) {</code>
+			<code>		super(props);</code>
+			<code>		this.state = { date: new Date() };</code>
+			<code>	}</code>
+			<code>	render() {</code>
+			<code>		return (</code>
+			<code>			&lt;h2&gt;It is { this.state.date }.&lt;/h2&gt;</code>
+			<code>		);</code>
+			<code>	}</code>
+			<code>}</code>
+		</pre>
+		<style>
+			#state1 pre {
+				font-size: 80%;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="state2">
+		<h2>State</h2>
+		<pre>
+			<code>class Clock extends React.Component {</code>
+			<code>	...</code>
+			<code>	updateTime() {</code>
+			<code>		this.setState({	<strong>//just don't do this.state.date = new Date();</strong></code>
+			<code>			date: new Date()</code>
+			<code>		});</code>
+			<code>	}</code>
+			<code>	render() {</code>
+			<code>		return (</code>
+			<code>			&lt;button onClick={updateTime}&gt;Update time&lt;/button&gt;</code>
+			<code>		);</code>
+			<code>	}</code>
+			<code>}</code>
+		</pre>
+		<style>
+			#state2 pre {
+				font-size: 68%;
+			}
+			strong {
+				color: red;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="lifecycle">
+		<h2>Lifecycle</h2>
+		<pre>
+			<code>class App extends React.Component {</code>
+			<code>	...</code>
+			<code>	componentWillMount() {<strong>/*before first rendering*/</strong>}</code>
+			<code>	componentDidMount() {<strong>/*after first rendering*/</strong>}</code>
+			<code>	componentWillUnmount() {<strong>/*before removing from DOM*/</strong>}</code>
+			<code>	componentWillReceiveProps(nextProps) {<strong>/*before renewing the props*/</strong>}</code>
+			<code>	componentWillUpdate(nextProps, nextState) {</code>
+			<code>		<strong>/*before rendering after renewing the state/props*/</strong>}</code>
+			<code>	componentDidUpdate(nextProps, nextState) {<strong>/*after redering*/</strong>}</code>
+			<code>	...</code>
+			<code>}</code>
+		</pre>
+		<style>
+			#lifecycle pre {
+				font-size: 80%;
+			}
+			strong {
+				color: red;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="inheritanceVsComposition">
+		<h2>Inheritance vs Composition</h2>
+		<pre>
+			<code>class B extends React.Component {</code>
+			<code>	...</code>
+			<code>	render() {</code>
+			<code>		return <strong>&lt;div&gt;&lt;A/&gt;&lt;/div&gt;</strong></code>
+			<code>	}</code>
+			<code>}</code>
+			<code>class C <strong>extends A</strong> { <strong>//don't, just don't</strong></code>
+			<code>	...</code>
+			<code>}</code>
+		</pre>
+		<style>
+			#inheritanceVsComposition pre {
+				font-size: 80%;
+			}
+			strong {
+				color: red;
+			}
+		</style>
+	</section>
+
+
+	<section class="slide">
+		<img src="pictures/gulp.jpg" alt="gulp" class="cover">
+	</section>
+
+	<section class="slide" id="gulp">
+		<pre>
+			<code>const gulp = require('gulp');</code>
+			<code>gulp.task('test', function() {</code>
+			<code>	console.log('Test gulp');</code>
+			<code>});</code>
+		</pre>
+		<style>
+			#gulp pre {
+				padding: 100px 0 0 150px;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<img src="pictures/br+bl.png" alt="plugins" class="cover">
+	</section>
+
+	<section class="slide" id="webpack1">
+		<img src="pictures/webpack.png" class="cover">
+	</section>
+
+	<section class="slide" id="webpack2">
+		<h2>Modules</h2>
+		<ul>
+			<li>native js (too many &lt;script&gt; tags)</li>
+			<li>AMD: Require.js</li>
+			<li>Node: Common.js</li>
+			<li>ES6</li>
+			<li>Webpack</li>
+		</ul>
+	</section>
+
+	<section class="slide" id="webpack3">
+		<pre>
+			<code>module.exports = {</code>
+  			<code>	entry: './src/client.js',</code>
+  			<code>	output: {</code>
+    		<code>		path: './public',</code>
+    		<code>		filename: 'bundle.js'</code>
+  			<code>	},</code>
+  			<code>	module: {</code>
+    		<code>		loaders: [{</code>
+        	<code>			test: /\.js$/,</code>
+        	<code>			exclude: /node_modules/,</code>
+        	<code>			loader: 'babel-loader'</code>
+      		<code>		}]</code>
+  			<code>	},</code>
+			<code>};</code>
+		</pre>
+		<style>
+			#webpack3 pre {
+				font-size: 70%;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="speed">
+		<h2>Тестирование скорости…</h2>
+		<img src="pictures/speed.jpg" alt="speed" class="cover">
+		<style>
+			#speed h2 {
+				padding-left: 200px;
+				padding-top: 430px;
+    			color: black;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<h2>Что-то пошло не по плану с демнострацией скорости…</h2>
+		<a href="https://youtu.be/z5e7kWSHWTg?t=3m15s">видосик</a>
+	</section>
+	<p class="badge">
+		<a href="https://github.com/shower/shower">Fork Shower on GitHub</a>
+	</p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"></div>
+	<script src="node_modules/shower-core/shower.min.js"></script>
+	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>

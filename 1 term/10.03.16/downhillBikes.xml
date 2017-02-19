@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<downhillBikes>
+    <company name="norco">
+        <productLine name="aurum carbon">
+            <bike name="c7.1">
+                <frameset>
+                    <frame>Aurum frame (CARBON / ALLOY )</frame>
+                    <fork>Fox Factory Float 40 w/Kashima</fork>
+                    <rearShock>Fox Factory Float X2 w/Kashima</rearShock>
+                </frameset>
+                <wheels>
+					<hub>DT 240</hub>
+					<rims>DT EX 511 30 mm inner 27.5</rims>
+					<tires>Magic Mary 27.5x2.35 super gravity</tires>
+				</wheels>
+				<components>
+					<saddle>Norco Pivotal DH saddle</saddle>
+					<brakes>Sram Guide RSC hydraulic w/200mm rotor</brakes>
+					<shifters>Sram XO 1 DH 1x7</shifters>
+				</components>
+            </bike>
+            <bike name="c7.2">
+				<frameset>
+					<frame>Aurum frame (CARBON / ALLOY )</frame>
+					<fork>Boxxer R2C2 Team 200 mm travel 27.5</fork>
+					<rearShock>Rockshox Vivid RC2C Coil</rearShock>
+				</frameset>
+				<wheels>
+					<hub>DT 350 20 mm</hub>
+					<rims>DT EX 512 30 mm inner 27.5</rims>
+					<tires>Magic Mary 27.5x2.35 super gravity</tires>
+				</wheels>
+				<components>
+					<saddle>Norco Pivotal DH saddle</saddle>
+					<brakes>Sram Guide RS hydraulic w/200 mm rotor</brakes>
+					<shifters>Sram XO 1 DH 1x7</shifters>
+				</components>
+			</bike>
+            <bike name="c7.3">
+				<frameset>
+					<frame>Aurum frame (CARBON / ALLOY )</frame>
+					<fork>Rock shox Boxxer RC 27.5</fork>
+					<rearShock>Rock shox KAGE RC coil spring</rearShock>
+				</frameset>
+				<wheels>
+					<hub>DT 370 20 mm</hub>
+					<rims>WTB STP I29</rims>
+					<tires>Maxxis Minion DHF frnt , DHR II rear 27.5x2.40 Super Tacky</tires>
+				</wheels>
+				<components>
+					<saddle>SDG I Fly 2.0 I Beam</saddle>
+					<brakes>Sram Guide R hydraulic w/200 mm rotor</brakes>
+					<shifters>Sram GX 1x7</shifters>
+				</components>
+			</bike>
+        </productLine>
+    </company>
+    <company name="specialized">
+        <productLine name="demo 8">
+            <bike name="s-works">
+				<frameset>
+					<frame>FACT 11m</frame>
+					<fork>RockShox BoXXer Team 650b</fork>
+					<rearShock>Custom Öhlins TTX</rearShock>
+				</frameset>
+				<wheels>
+					<hub>Custom DT Swiss 350</hub>
+					<rims>Roval 650b</rims>
+					<tires>Butcher DH casing 650bx2.5&quot;</tires>
+				</wheels>
+				<components>
+					<saddle>Phenom Expert</saddle>
+					<brakes>Custom SRAM Guide</brakes>
+					<shifters>XO DH</shifters>
+				</components>
+			</bike>
+			<bike name="carbon">
+				<frameset>
+					<frame>FACT 10m</frame>
+					<fork>RockShox BoXXer RC 650b</fork>
+					<rearShock>Custom Öhlins TTX</rearShock>
+				</frameset>
+				<wheels>
+					<hub>Specialized disc</hub>
+					<rims>Roval 650b</rims>
+					<tires>Butcher DH casing 650bx2.5&quot;</tires>
+				</wheels>
+				<components>
+					<saddle>Body Geometry Phenom Comp</saddle>
+					<brakes>SRAM Guide R</brakes>
+					<shifters>SRAM GX</shifters>
+				</components>
+			</bike>
+			<bike name="alloy">
+				<frameset>
+					<frame>M5 alloy</frame>
+					<fork>RockShox BoXXer Team 650b</fork>
+					<rearShock>Custom Öhlins TTX</rearShock>
+				</frameset>
+				<wheels>
+					<hub>Custom DT Swiss 350</hub>
+					<rims>Roval 650b</rims>
+					<tires>Butcher DH casing 650bx2.5&quot;</tires>
+				</wheels>
+				<components>
+					<saddle>Body Geometry Phenom Comp</saddle>
+					<brakes>SRAM BB30</brakes>
+					<shifters>SRAM X9</shifters>
+				</components>
+			</bike>
+        </productLine>
+    </company>
+    <company name="giant">
+        <productLine name="glory">
+            <bike name="advanced 0">
+				<frameset>
+					<frame>Advanced-grade composite w/ ALUXX SL rear triangle</frame>
+					<fork>RockShox Boxxer Team</fork>
+					<rearShock>RockShox Vivid R2C</rearShock>
+				</frameset>
+				<wheels>
+					<hub>DT Swiss 240S</hub>
+					<rims>DT Swiss EX 471</rims>
+					<tires>Schwalbe Magic Mary DH</tires>
+				</wheels>
+				<components>
+					<saddle>Giant Contact SL Forward, SST tubular rails</saddle>
+					<brakes>SRAM Guide Ultimate, hydraulic disc, [F] 200mm [R] 180mm</brakes>
+					<shifters>SRAM Guide Ultimate Composite</shifters>
+				</components>
+			</bike>
+			<bike name="advanced 1">
+				<frameset>
+					<frame>Advanced-grade composite w/ ALUXX SL rear triangle</frame>
+					<fork>Fox 40 Performance Elite</fork>
+					<rearShock>Fox DHX2 Performance Elite</rearShock>
+				</frameset>
+				<wheels>
+					<hub>Giant Performance Tracker Disc</hub>
+					<rims>Giant P-AM2</rims>
+					<tires>Schwalbe Magic Mary DH, 27.5x2.35, Vertstar</tires>
+				</wheels>
+				<components>
+					<saddle>Giant Contact Forward</saddle>
+					<brakes>Shimano Zee, hydraulic disc, [F] 200mm [R] 180mm</brakes>
+					<shifters>Shimano Zee</shifters>
+				</components>
+			</bike>
+			<bike name="glory 2">
+				<frameset>
+					<frame>ALUXX SL-grade aluminum, 200mm Maestro suspension</frame>
+					<fork>RockShox Domain RC Dual Crown</fork>
+					<rearShock>RockShox Kage R</rearShock>
+				</frameset>
+				<wheels>
+					<hub>Giant Performance Tracker Disc, 32h, [F] Boost 110x15mm, [R] 150x12mm</hub>
+					<rims>Giant P-AM2</rims>
+					<tires>Schwalbe Magic Mary, 27.5x2.35</tires>
+				</wheels>
+				<components>
+					<saddle>Giant Contact Forward</saddle>
+					<brakes>SRAM Level TL, hydraulic disc, 200mm</brakes>
+					<shifters>SRAM X5</shifters>
+				</components>
+			</bike>
+        </productLine>
+    </company>
+</downhillBikes>

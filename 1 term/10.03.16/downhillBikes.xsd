@@ -1,0 +1,68 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="downhillBikes">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="company" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="productLine">
+                <xs:complexType>
+                  <xs:sequence>
+
+                    <xs:element name="bike" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+
+                          <xs:element name="frameset">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="frame"/>
+                                <xs:element type="xs:string" name="fork"/>
+                                <xs:element type="xs:string" name="rearShock"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+
+                          <xs:element name="wheels">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="hub"/>
+                                <xs:element type="xs:string" name="rims"/>
+                                <xs:element type="xs:string" name="tires"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+
+                          <xs:element name="components">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="saddle"/>
+                                <xs:element type="xs:string" name="brakes"/>
+                                <xs:element type="xs:string" name="shifters"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="name" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="name" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
